@@ -1,406 +1,874 @@
 
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>《守望先锋》官方网站</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="copyright" content="&copy;2015 暴雪娱乐股份有限公司版权所有 上海网之易网络科技发展有限公司" />
-<meta content="black" name="apple-mobile-web-app-status-bar-style" />
-<link rel="icon" href="http://blz.nos.netease.com/1/overwatch/images/common/overwatch.ico" type="image/x-icon"/>
-<link rel="shortcut icon" href="http://blz.nos.netease.com/1/overwatch/images/common/overwatch.ico" type="image/x-icon"/>
-<meta name="apple-mobile-web-app-title" content="郭权乐！！！官方网站">
-<meta content="width=device-width,maximum-scale=1.0" name="viewport" />
-<link rel="apple-touch-icon" sizes="57x57" href="http://overwatch.nos.netease.com/1/images/layout/icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="http://overwatch.nos.netease.com/1/images/layout/icon-iphone-retina.png" />
-<meta name="keywords" content="守望先锋，overwatch，守望先锋官网,overwatch官网，守望先锋国服，overwatch国服" />
-<meta name="description" content="《守望先锋》是暴雪出品的首款团队射击游戏，现已正式来到中国。游戏以近未来地球为背景，来自全球的超级英雄们将使用自己独特的能力在战场上厮杀，带给玩家顶尖的射击体验。" />
-    <meta name="360-site-verification" content="8829834049429fd5c0bae4e3ed5daf63" />
-    <link rel="stylesheet" href="/css/features.min.css"/>
-    <link rel="stylesheet" href="/css/pages/home.css" type="text/css" media="all" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
+    <meta name="keyword"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, 郭权乐 Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>黄玄的博客 | Hux Blog</title>
+
+    <link rel="canonical" href="http://huangxuan.me/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
-<body class="home">
-    
-    <div class="navbars">
-    <div id="nav-client-header" class="nav-client mobileEnabled compact">
-        <!--[if !IE|(gt IE 8)]> <!-->
-        <div class="nav-mobile-menubar">
-            <div class="nav-hamburger-menu-icon"></div>
-            <div class="nav-mobile-menu-title"></div>
-            <div class="nav-global-menu-icon"></div>
-            <div class="nav-notification-icon"><a rel="navbar" class="dropdown-toggle needsclick nav-item"><i class="needsclick nav-icon-bell"></i></a>
-                <div class="nav-notification-dropdown dropdown-menu">
-                    <div class="arrow top"></div>
-                </div>
-            </div>
-        </div>
-        <div class="nav-mobile-menu-wrap right">
-            <div class="menu-relative-wrap">
-                <div class="menu-header global-menu cn">
-                    <div class="nav-remove-icon-wrap">
-                        <div class="nav-remove-icon"></div>
-                    </div>
-                </div>
-                <div class="menu-content">
-                    <div id="user-account" class="nav-box"><a href="javascript:void(0);" class="nav-btn nav-btn-block nav-login-btn nav-item" id="login"><span>登录</span></a></div>
-                    <div class="nav-box">
-                                <span class="battletag"></span>
-                                <span class="code"></span>
-                    </div>
-                    <div class="nav-box">
-                        <a class="nav-item nav-item-box nav-logout" href="#"><i class="nav-icon-24-blue nav-icon-logout"></i>注销</a>
-                    </div>
-                    <div id="general-menu" class="nav-box">
-                        <ul class="menu-list global-menu-main">
-                            <li class="menu-list-item"><a href="http://www.battlenet.com.cn/shop/" target="_blank" class=" nav-item" id="nav-client-shop"><i class="nav-icon-24-blue nav-icon-shopping-cart"></i><span>商城</span></a></li>
-                            <li class="menu-list-item"><a href="http://www.battlenet.com.cn/support/" target="_blank" class=" nav-item" id="nav-client-support"><i class="nav-icon-24-blue nav-icon-question-circle"></i><span>支持</span></a></li>
-                            <li class="menu-list-item"><a href="http://www.battlenet.com.cn/account/management/" target="_blank" class=" nav-item" id="nav-client-account-settings"><i class="nav-icon-24-blue nav-icon-character-cog"></i><span>账户</span></a></li>
-                        </ul>
-                    </div>
-                    <div id="games-menu" class="nav-box"><span id="games-menu-title">游戏</span>
-                        <ul class="menu-list global-menu-games">
-                            <li class="menu-list-item"><a href="http://wow.blizzard.cn/" target="_blank" class="game-icon nav-item" id="nav-client-news"><i class=" nav-icon-wow"></i><span>《魔兽世界®》</span></a></li>
-                            <li class="menu-list-item"><a href="http://d3.blizzard.cn/" target="_blank" class="game-icon nav-item" id="nav-client-news"><i class=" nav-icon-d3"></i><span>《暗黑破坏神®III》</span></a></li>
-                            <li class="menu-list-item"><a href="http://sc2.blizzard.cn/" target="_blank" class="game-icon nav-item" id="nav-client-news"><i class=" nav-icon-sc2"></i><span>《星际争霸®II》</span></a></li>
-                            <li class="menu-list-item"><a href="http://hs.blizzard.cn/" target="_blank" class="game-icon nav-item" id="nav-client-news"><i class=" nav-icon-hearthstone"></i><span>《炉石传说®》</span></a></li>
-                            <li class="menu-list-item"><a href="http://heroes.blizzard.cn/" target="_blank" class="game-icon nav-item" id="nav-client-news"><i class=" nav-icon-heroes"></i><span>《风暴英雄™》</span></a></li>
-                            <li class="menu-list-item"><a href="http://ow.blizzard.cn/" target="_blank" class="game-icon nav-item" id="nav-client-news"><i class=" nav-icon-overwatch"></i><span>《守望先锋》</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="nav-blackout" style="display:none"></div>
-        <!--<![endif]-->
-        <div id="nav-client-bar">
-            <div style="max-width: 100%" class="grid-container nav-header-content">
-                <ul id="nav-client-main-menu" class="nav-list nav-left">
-                    <li>
-                        <a href="http://www.battlenet.com.cn/" class="nav-home nav-item" id="nav-client-home"></a>
-                    </li>
-                    <li>
-                        <div class="dropdown games"><a id="nav-client-games" data-toggle="dropdown" class="dropdown-toggle nav-link needsclick ">游戏<b class="caret"></b></a>
-                            <div class="dropdown-menu">
-                                <ul role="menu" class="nav-product-card-container games-menu">
-                                    <li><a href="http://wow.blizzard.cn/" target="_blank" class="game-icon nav-item"><i class=" nav-icon-wow"></i><span>《魔兽世界®》</span></a></li>
-                                    <li><a href="http://d3.blizzard.cn/" target="_blank" class="game-icon nav-item"><i class=" nav-icon-d3"></i><span>《暗黑破坏神®III》</span></a></li>
-                                    <li><a href="http://sc2.blizzard.cn/" target="_blank" class="game-icon nav-item"><i class=" nav-icon-sc2"></i><span>《星际争霸®II》</span></a></li>
-                                    <li><a href="http://hs.blizzard.cn/" target="_blank" class="game-icon nav-item"><i class=" nav-icon-hearthstone"></i><span>《炉石传说®》</span></a></li>
-                                    <li><a href="http://heroes.blizzard.cn/" target="_blank" class="game-icon nav-item"><i class=" nav-icon-heroes"></i><span>《风暴英雄™》</span></a></li>
-                                    <li><a href="http://ow.blizzard.cn/" target="_blank" class="game-icon nav-item"><i class=" nav-icon-overwatch"></i><span>《守望先锋》</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="http://www.battlenet.com.cn/shop/" target="_blank" class="nav-link needsclick nav-item" id="nav-client-shop"><span>商城</span></a></li>
-                </ul>
-                <ul id="nav-client-account-menu" class="nav-list nav-right">
-                    <li>
-                        <div id="username">
-                            <div class="dropdown pull-right"><a id="nav-client-account" data-toggle="dropdown" rel="navbar" class="nav-link username username--loggedout needsclick dropdown-toggle capitalize"><span>您的通行证</span><b class="caret"></b></a>
-                                <div class="dropdown-menu">
-                                    <div class="arrow top"></div>
-                                    <div class="user-profile">
-                                        <div class="dropdown-section">
-                                            <div class="nav-box"><a href="javascript:void(0);" class="nav-btn nav-btn-block nav-login-btn nav-item"><span>登录</span></a></div>
-                                        </div>
-                                        <div class="dropdown-section">
-                                            <div class="nav-box selectable">
-                                                <div class="label">
-                                                    <span class="battletag"></span>
-                                                    <span class="code"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-section">
-                                            <ul class="nav-list">
-                                                <li>
-                                                    <a class="nav-item nav-a nav-item-box" href="http://www.battlenet.com.cn/account/management/" target="_blank"><i class="nav-icon-24-blue nav-icon-character-cog"></i>账户</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dropdown-section">
-                                            <a class="nav-item nav-item-box nav-logout" href="#"><i class="nav-icon-24-blue nav-icon-logout"></i>注销</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="http://www.battlenet.com.cn/support/" target="_blank" class="nav-link needsclick nav-item" id="nav-client-support-link"><span>支持</span></a></li>
-                    <li>
-                        <div class="nav-notification-icon"><a rel="navbar" class="dropdown-toggle needsclick nav-item"><i class="needsclick nav-icon-bell"></i></a>
-                            <div class="nav-notification-dropdown dropdown-menu">
-                                <div class="arrow top"></div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-notification-responsive-container">
-            <div class="nav-notification-dropdown dropdown-menu">
-                <div class="arrow top"></div>
-            </div>
-        </div>
-    </div>
-    <nav role="main">
-        <div class="nav-left m-mobile">
-            <div slide-menu-open="mobile" class="nav-btn m-burger"><span></span><span></span><span></span></div>
-            <a href="/" class="nav-logo"></a>
-            <div class="nav-btn m-bnet"></div>
-        </div>
-        <ul class="nav-menu nav-left">
-            <li><a href="/game/" class="nav-btn ">游戏特色</a></li>
-            <li><a href="/heroes/" class="nav-btn ">英雄</a></li>
-            <li><a href="/media/" class="nav-btn ">视频图片</a></li>
-            <li><a href="/article/news/" class="nav-btn ">新闻</a></li>
-            <li><a href="/article/news/91" class="nav-btn">下载</a></li>
-            <li><a href="http://bbs.ow.blizzard.cn/" target="_blank" class="nav-btn">论坛</a></li>
-        </ul>
-        <div class="nav-right nav-actions"><a href="/buy/" class="nav-btn m-orange">立即购买</a></div>
-        <div class="nav-border"></div>
-    </nav>
-</div>
-<nav role="mobile" slide-menu="mobile" class="slide-menu">
-    <div class="close">&times;</div>
-    <div class="inner">
-        <div class="content">
-            <a close href="/" class="nav-logo m-icon"></a>
-            <ul class="nav-menu">
-                <li><a href="/" close class="nav-btn m-active">首页</a></li>
-                <li><a href="/game/" close class="nav-btn ">游戏特色</a></li>
-                <li><a href="/heroes/" close class="nav-btn ">英雄</a></li>
-                <li><a href="/media/" close class="nav-btn ">视频图片</a></li>
-                <li><a href="/article/news/" close class="nav-btn ">新闻</a></li>
-                <li><a href="/article/news/91" close class="nav-btn">下载</a></li>
-                <li><a href="http://bbs.ow.blizzard.cn/" target="_blank" close class="nav-btn">论坛</a></li>
-            </ul><a href="/buy/" class="nav-btn m-orange m-center">立即购买</a></div>
-    </div>
-</nav>
 
-    <section class="outter">
-        <div hero-scene="hero-scene" class="parallax">
-            <div class="fg">
-                <div id="particles" class="particles"></div>
-                <div class="deco"></div>
-            </div>
-            <div id="hero-scene" class="scene">
-                <div data-depth='0.15' class="layer one"></div>
-                <div data-depth='0.3' class="layer two"></div>
-                <div data-depth='0.45' class="layer three"></div>
-                <div data-depth='0.6' class="layer four"></div>
-                <div data-depth='0.1' class="layer logo"></div>
-            </div>
-            <div class="bg">
-                <div class="candy"></div>
-                <video autoplay="autoplay" loop="loop" class="video">
-                    <source type="video/mp4" src="http://overwatch.nos.netease.com/1/assets/video/Embers.mp4" />
-                    <source type="video/webm" src="http://overwatch.nos.netease.com/1/assets/video/Embers_1.webm" />
-                </video>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">郭权乐 Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/portfolio/">Portfolio</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
             </div>
         </div>
-    </section>
-    <section class="outter mobile-cta">
-        <div class="inner"><a href="/buy/" data-analytics-placement="Home - Top" class="button m-lg buy-cta">立即购买</a>
-                    <p class="buy-tips" style="color:#000;"><span class="set-icon"></span><strong>游戏安装提醒：</strong>安装游戏需要64位的 Windows&reg; 7/Windows&reg; 8/Windows&reg; 10操作系统 (不支持Mac系统)  <a target="_blank" href="https://www.battlenet.com.cn/support/zh/article/2767">查看详情&gt;&gt;</a></p>
-            <a href="javascript:void(0);" data-yt-id="9ybyHLfZMVE" class="media-thumbnail btn-art m-playable intro-trailer btn-art">
-                <div class="wrap">
-                    <video autoplay loop class="media">
-                        <source src="http://overwatch.nos.netease.com/1/images/home/gameplay-trailer-1104.mp4" type="video/mp4">
-                </div><span class="caption">游戏介绍</span></a>
-        </div>
-    </section>
-    <section class="outter">
-        <div class="inner cta-bar-container">
-            <div class="cta-bar">
-                <div class="cell">
-                    <a href="javascript:void(0);" data-analytics-placement="gameplay-trailer" data-yt-id="9ybyHLfZMVE" title="游戏介绍" class="button m-lg video-cta">
-                        <div data-analytics-placement="gameplay-trailer" class="media-thumbnail btn-art m-playable intro-trailer btn-art">
-                            <div class="wrap">
-                                <video autoplay loop class="media">
-                                    <source src="http://overwatch.nos.netease.com/1/images/home/gameplay-trailer-1104.mp4" type="video/mp4">
-                            </div>
-                        </div>
-                        <div class="center-in-button-wrapper"><span class="center-in-button">游戏介绍</span></div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="/buy/" class="button m-lg buy-cta">
-                        <div class="center-in-button-wrapper"><span class="center-in-button">立即购买</span></div><img src="http://overwatch.nos.netease.com/1/assets/img/pages/home/btn-tracer.png" class="btn-art fallback"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="outter news-panels">
-        <div class="inner">
-            <h2 class="h5">新闻公告</h2>
-            <a href="/article/news/" class="button m-blue m-wide intro-button">查看所有新闻</a></div>
-    </section>
-    <section class="fight-section bg-cairo outter">
-        <div class="bg-cairo bg-fftf trans-in"></div>
-        <div class="bg-volskaya bg-fftf trans-out"></div>
-        <div class="bg-london bg-fftf trans-out"></div>
-        <div class="inner">
-            <h2 class="intro-heading">为未来而战</h2>
-            <p class="intro-text u-align-center u-center-block">军人、科学家、冒险家、奇人异士。
-                <br />
-                <br />在人类陷入空前危机之时，来自全球各个国家的特种精英们，为了结束战争、重铸秩序而团结在了一起。他们，就是<strong>守望先锋</strong>。
-                <br />
-                <br />英雄们最终结束了这场危机，人类文明在随后的数十年内和平共存并迎来了一个探索、革新和发现的新时代。尽管如此，守望先锋在多年后逐渐被人们所遗忘，最终难逃被解散的命运。
-                <br />
-                <br /> </p>
-            <p class="intro-text u-align-center u-center-block">如今，世界各地争端再起，人们都翘首期待着新英雄的出现，或旧英雄的归来。
-                <br />
-                <br />你愿意与我们共同抗争吗？ </p><a href="/game/" class="button m-lg">探索游戏</a></div>
-    </section>
-    <section class="heroes-section bg-petals content-box">
-        <div class="page-wrapper">
-            <div class="row">
-                <div class="column">
-                    <h2 class="intro-heading intro-heading-gradient-blue">各具特色的英雄</h2>
-                    <div class="intro-text u-center-block u-limit-width">
-                        <p>不论喜欢哪种游戏方式，你总能找到适合自己玩法的英雄。</p>
-                        <p>掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column xs-12 lg-6">
-                    <ul class="clearfix hero-portrait-group js-hero-portrait-group u-margin-top-lg u-center-block">
-                    </ul>
-                </div>
-                <div class="column xs-12 lg-6 show-for-lg">
-                    <div class="spotlight">
-                        <h2 class="header"></h2>
-                        <div style="margin-top: -4%; padding-top: 101.7%" class="holder"></div>
-                        <p style="margin-top: -12%;max-width: 80%;" class="caption u-center-block u-limit-width"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content-box u-align-center hide-for-lg">
-        <div class="page-wrapper">
-            <div class="row column">
-                <h2 class="intro-heading intro-heading-gradient-blue">立即购买</h2></div>
-            <div class="bg-mountain-city u-relative widowmaker-container">
-                <div class="fg-widowmaker-shoulder-rifle"></div>
-            </div>
-            <div class="row column bottom-bg" style="padding-top: 40px;">
-                <p class="intro-text">现在即是未来，你来吗？
-                    <br />这个世界需要英雄</p>
-            </div>
-        </div>
-    </section>
-    <section class="bg-mountain-city show-for-lg"></section>
-    <section class="prepurchase-section-desktop bg-museum content-box show-for-lg">
-        <div class="fg-widowmaker-shoulder-rifle u-anchor-bottom"></div>
-        <div class="page-wrapper" style="margin-bottom: 150px;">
-            <div class="row">
-                <div class="column lg-6 lg-offset-6 xl-5 xl-offset-6">
-                    <h2 class="intro-heading-gradient-blue">这个世界需要英雄</h2>
-                    <p class="intro-text">现在即是未来，你来吗？</p><a href="/buy/" data-analytics="overwatch-buy" data-analytics-placement="Home - Bonus" class="button m-lg">立即购买</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="blackout"></div>
-<div class="footer-buy-bar">
-    <div class="content-box u-align-center">
-        <a class="footer-prepurchase button m-lg" href="/buy/">立即购买</a>
-        <p class="buy-tips"><span class="set-icon"></span><strong>游戏安装提醒：</strong>安装游戏需要64位的 Windows® 7/Windows® 8/Windows® 10操作系统 (不支持Mac系统)  <a href="https://www.battlenet.com.cn/support/zh/article/2767" target="_blank">查看详情>></a></p>
+        <!-- /.navbar-collapse -->
     </div>
-</div>
-<footer id="footer">
-    <div class="footerWrap">
-        <div class="support-feedback clearFix">
-            <div class="cs">
-                <a class="cs-online" target="_blank" href="https://www.battlenet.com.cn/support/zh/">
-                    <span class="icon icon-1"></span> 在线客服
-                </a>
-                <a class="cs-Feedback" target="_blank" href="http://www.battlenet.com.cn/zh/feedback">
-                    <span class="icon icon-2"></span> 反馈
-                </a>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Hux Blog</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">一生想做浪漫极客</span>
+                </div>
             </div>
         </div>
-        <div class="cprt">
-            <a target="_blank" href="http://blizzard.com/" class="logo_bz"></a>
-            <a target="_blank" href="http://www.163.com/" class="logo_ne"></a>
-            <div class="info">
-            <ul class="f-cb">
-               <li><a target="_blank" href="http://www.battlenet.com.cn/zh/legal-cn/privacy">隐私</a>|</li>
-               <li><a target="_blank" href="http://www.battlenet.com.cn/zh/legal-cn/">法律条款</a>|</li>
-               <li><a target="_blank" href="https://dev.battle.net/">API</a></li>
-            </ul>
-            <p>&copy;2016 暴雪娱乐股份有限公司版权所有 由上海网之易网络科技发展有限公司运营<a href="http://www.battlenet.com.cn/legal-cn/infringementnotice"> 著作权侵权</a>&nbsp;新广出审[2016]378号</p>
-            <p>文网游进字[2016]0025号&nbsp;<a href="http://blz.nos.netease.com/1/frame/cprt/license.jpg">沪网文[2014]0731-161号</a>&nbsp;<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">增值电信业务经营许可证编号：沪B2－20080012</a></p>
-            <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502032167号</p>
-            <p class="integrity">
-                <a href="http://sh.cyberpolice.cn/infoCategoryListAction.do?act=initjpg" target="_blank"><img src="http://blz.nos.netease.com/1/frame/cprt/police.png"></a>
-                <a href="http://www.zx110.org/" target="_blank"><img src="http://blz.nos.netease.com/1/frame/cprt/zx110.png"></a>
-                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20111011175417664" target="_blank"><img src="http://blz.nos.netease.com/1/frame/cprt/sgs-icon.png"></a>
-                <a href="http://www.shjbzx.cn/" target="_blank"><img src="http://blz.nos.netease.com/1/frame/cprt/icon20120516.png"></a>
-            </p>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2016/02/01/React-vs-Angular2/">
+        <h2 class="post-title">
+            React vs Angular 2：冰与火之歌「译」
+        </h2>
+        
+        <h3 class="post-subtitle">
+            React versus Angular 2: There Will Be Blood
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  这篇文章转载自我在知乎专栏「前端外刊评论」上发表的文章。
+
+
+Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热门框架。是时候进行一场巅峰对决了，我们来看看它如何与 React 这个 2015 年的新宠抗衡。
+
+免责声明：我之前很喜欢使用 Angular 1，不过在 2015 年转到了 React。最近我也在 Pluralsight 上发布了一门关于 R...
         </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on February 1, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/12/28/css-sucks-2015/">
+        <h2 class="post-title">
+            都 2015 年了，CSS 怎么还是这么糟糕
+        </h2>
+        
+        <h3 class="post-subtitle">
+            Keynote: CSS Still Sucks 2015
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  下滑这里查看更多内容
+
+
+Watch Slides →
+
+
+
+你也可以通过扫描二维码在手机上观看
+
+这个 Web Slides 开源在我的 Github 上，欢迎你帮助我完善这个展示文稿，你可以给我提 issue，可以 fork &amp; pull request。如果它能帮助到你了，希望你还能不吝啬 star 一下这个项目
+
+Catalog
+
+
+  Document Times
+ ...
         </div>
-        <p class="tips">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
-            <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on December 28, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/12/15/ios9-safari-web/">
+        <h2 class="post-title">
+            iOS 9，为前端世界都带来了些什么？「译」
+        </h2>
+        
+        <h3 class="post-subtitle">
+            iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs
+        </h3>
+        
+        <div class="post-content-preview">
+            2015 年 9 月，Apple 重磅发布了全新的 iPhone 6s/6s Plus、iPad Pro 与全新的操作系统 watchOS 2 与 tvOS 9（是的，这货居然是第 9 版），加上已经发布的 iOS 9，它们都为前端世界带来了哪些变化呢？作为一个 web 开发者，是时候站在我们的角度来说一说了！
+
+
+  注！ 该译文存在大量英文术语，笔者将默认读者知晓 ES6、viewpor...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on December 15, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/10/28/how-designer-learn-fe/">
+        <h2 class="post-title">
+            「知乎」设计师如何学习前端？
+        </h2>
+        
+        <h3 class="post-subtitle">
+            How designers learn front-end development?
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  这篇文章转载自我在知乎上的回答，也被刊登于优秀网页设计等多个网站上 ;)
+
+
+笔者的经历在知乎就可以看到，大学专业是数字媒体艺术，大一实习过动效设计师，大二拿到了人生第一个大公司 offer 是阿里的交互设计，后来转岗到淘宝旅行的前端团队，现在在微信电影票做前端研发。
+
+也是走过了不少野路子，不过还好有小右哥 @尤雨溪 这样艺术/设计转前端的大神在前面做典范，也证明这条路是玩的通的 ;...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on October 28, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/09/22/js-version/">
+        <h2 class="post-title">
+            ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？「译」
+        </h2>
+        
+        <h3 class="post-subtitle">
+            ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?
+        </h3>
+        
+        <div class="post-content-preview">
+            JavaScript 有着很奇怪的命名史。
+
+1995 年，它作为网景浏览器（Netscape Navigator）的一部分首次发布，网景给这个新语言命名为 LiveScript。一年后，为了搭上当时媒体热炒 Java 的顺风车，临时改名为了 JavaScript （当然，Java 和 JavaScript 的关系，就和雷锋和雷锋塔一样 —— 并没有什么关系）
+
+
+歪果仁的笑话怎么一点都不好...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on September 22, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/07/09/js-module-7day/">
+        <h2 class="post-title">
+            JavaScript 模块化七日谈
+        </h2>
+        
+        <h3 class="post-subtitle">
+            Keynote: JavaScript Modularization Journey
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  下滑这里查看更多内容
+
+
+7月9日，我在公司内部进行了名为「JavaScript 模块化七日谈」分享，并将该 Slides 分享到了微博上。出乎意料地，这篇微博先后被 @JS小组 @尤小右 @寸志 等近 200 人转发，阅读达到 10w，获得了还不错的评价。
+
+于是，我决定将它重新发到我的博客上，并为它专门制作了适用于 Keynote 展示文稿的新布局。它能自动根据屏幕大小/旋转以一定...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on July 9, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/06/15/alitrip-strategy/">
+        <h2 class="post-title">
+            聊聊「阿里旅行 · 去啊」—— 行业与战略 
+        </h2>
+        
+        <h3 class="post-subtitle">
+            聊聊在线旅行行业与老东家的产品思路
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  本篇为该系列第一篇 —— 行业与战略，让我们聊聊行业、战略与格局。
+
+
+前言
+
+近几年，互联网产品从线上斗到了线下，互联网行业和传统行业的跨界融合屡见不鲜，“渗透传统行业”几乎成为了全行业下一轮创新的标配，新词“互联网+”也应运而生：
+
+
+  将互联网行业的生产要素，深度融入经济、社会等各个领域，尝试改变一些传统的实体经济行业，创造出新的产品形态、商业模式和生态
+
+
+O2O 领域已经有...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on June 15, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/05/25/js-module-loader/">
+        <h2 class="post-title">
+            JavaScript Module Loader
+        </h2>
+        
+        <h3 class="post-subtitle">
+            CommonJS，RequireJS，SeaJS 归纳笔记
+        </h3>
+        
+        <div class="post-content-preview">
+            Foreword
+
+
+  Here comes Module!
+
+
+随着网站逐渐变成「互联网应用程序」，嵌入网页的 JavaScript 代码越来越庞大，越来越复杂。网页越来越像桌面程序，需要一个团队分工协作、进度管理、单元测试……我们不得不使用软件工程的方法，来管理网页的业务逻辑。
+
+于是，JavaScript 的模块化成为迫切需求。在 ES6 Module 来临之前，JavaScript...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on May 25, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/05/11/see-u-ali/">
+        <h2 class="post-title">
+            See you, Alibaba 
+        </h2>
+        
+        <h3 class="post-subtitle">
+            再见，阿里。
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  世界那么大，我想去看看
+
+
+Hi all
+这里是鬼栈的离职信。
+
+
+
+
+
+Review
+
+去年 5 月，大二的我拿到阿里的交互实习生 Offer，成为阿里的实习员工，刚好过去一个年头。
+
+8 月，感谢 @拔赤 老大的提携，同意了我转岗到航旅前端团队的申请，分在了老大亲自带队的 航旅事业群-无线业务部-无线技术-前端团队-前端三组，从此开始了一名前端程序猿的职业生涯。
+
+我的第一个 me...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on May 11, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/04/15/os-metro/">
+        <h2 class="post-title">
+            hUX 随想录（二）：操作系统的浪漫主义 —— Metro 篇
+        </h2>
+        
+        <h3 class="post-subtitle">
+            信息、载体、抽象、UI 设计乱谈
+        </h3>
+        
+        <div class="post-content-preview">
+            
+  操作系统的背后不只是冷冰冰的 0 和 1 ，数字时代的设计师们，如初神般刻画着新世界的秩序。信息、量子、宇宙，他们取世间万物为灵感来表达自己，那是它们对数字时代最浪漫的隐喻。
+
+
+前言
+
+操作系统，数字时代当之无愧的地基。当大部分从业人员都更关注它的技术与功能时，操作系统的 UI 设计师们却赋予了它无限的艺术气息：他们用充满着浪漫主义幻想色彩的设计语言，配合着物理定律般严谨的交互体系，...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on April 15, 2015
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page2">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#知乎" title="知乎" rel="7">
+                                    知乎
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#Android" title="Android" rel="2">
+                                    Android
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#交互设计" title="交互设计" rel="4">
+                                    交互设计
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#阿里巴巴" title="阿里巴巴" rel="3">
+                                    阿里巴巴
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#前端开发" title="前端开发" rel="8">
+                                    前端开发
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#职业病" title="职业病" rel="3">
+                                    职业病
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#生活" title="生活" rel="2">
+                                    生活
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#hUX 随想录" title="hUX 随想录" rel="2">
+                                    hUX 随想录
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#UX Design" title="UX Design" rel="3">
+                                    UX Design
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#OS" title="OS" rel="2">
+                                    OS
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#JavaScript" title="JavaScript" rel="5">
+                                    JavaScript
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#译文" title="译文" rel="2">
+                                    译文
+                                </a>
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/avatar-hux.jpg" />
+                        
+                        
+                            <p>写写代码，做做设计，看看产品。世界那么大，我想去看看。</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/huxpro">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="http://weibo.com/huxpro">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/huxpro">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/huxpro">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
+                    
+                        <li><a href="http://lingyu.wang/">天镶的博客</a></li>
+                    
+                        <li><a href="http://hmqk1995.github.io">Luke的自留地</a></li>
+                    
+                        <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
+                    
+                        <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
+                    
+                        <li><a href="http://xieminis.me/">解旻的博客</a></li>
+                    
+                        <li><a href="http://dhong.co">DHong Say</a></li>
+                    
+                        <li><a href="http://ingf.github.io/">尹峰以为</a></li>
+                    
+                        <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
+                    
+                </ul>
+                
+    		</div>
+        
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/huxpro">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/huxpro">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/huxpro">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/huxpro">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Hux Blog 2016
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
     </div>
 </footer>
-<script type="text/javascript">
-    var  BoxShareData = {
-		"successcallback": "success",
-        "errorcallback": "error",
-        "options": {
-            "type": "url",
-            "mediaType": "all",
-            "linkUrl": "http://ow.blizzard.cn",
-            "title": "《守望先锋》官方网站",
-            "content": "《守望先锋》是一款背景设定在未来地球的团队射击游戏。",
-            "iconUrl": "http://overwatch.nos.netease.com/1/assets/img/logos/share-logo.jpg",
-            "imageUrl": "http://overwatch.nos.netease.com/1/assets/img/logos/share-logo.jpg"
-        }
-    };
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
 </script>
-    <script src="/js/features.min.js"></script>
-<script type="text/javascript" src="http://account.bnet.163.com/js/??module/base.js,module/login.js"></script>
 
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
 
-    <script src="/js/jquery/jquery.popSlider.js"></script>
-    <script src="/js/helper/parallax.js"></script>
-    <script src="/js/home.js"></script>
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+-->
+<!--
     <script>
-    $(function() {
-        Home.init();
-        Common.init();
-    })
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
     </script>
-    <!-- START NetEase Devilfish 2006 --> 
-	<script src="http://analytics.163.com/ntes.js" type="text/javascript"></script> 
-	<script type="text/javascript"> 
-	_ntes_nacc = "overwatch"; 
-	neteaseTracker(); 
-	neteaseClickStat(); 
-	</script> 
-	
-<!-- END NetEase Devilfish 2006 -->
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
 
 <script>
-var _hmt = _hmt || [];(function() {  
-var hm = document.createElement("script");  
-hm.src = "//hm.baidu.com/hm.js?8a33ee10d3c587d9355577155ab22606";
-var s = document.getElementsByTagName("script")[0];   
-s.parentNode.insertBefore(hm, s);})();
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
 </script>
-    <script language="JavaScript">
-    function rand(num) {
-        return Math.floor(Math.random() * num) + 1;
-    }
-    document.write("<iframe style=\"display:none\" src=\"http://gad.netease.com/gad/point?point_id=1792&s=8jkVEXXoOyf%2FaY%2FLmZplH0XEMRg%3D&cache=" + rand(9999999) + "\" width=\"0\" height=\"0\"><\/iframe>");
-    </script>
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
 </body>
 
 </html>
